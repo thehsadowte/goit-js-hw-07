@@ -1,12 +1,10 @@
 import { galleryItems } from './gallery-items.js';
-// import SimpleLightbox from 'simplelightbox/dist/simple-lightbox.esm';
 
 // Change code below this line
 const gallery = document.querySelector('.gallery');
 const markup = renderGallery(galleryItems);
 
 gallery.insertAdjacentHTML('beforeend', markup);
-// gallery.addEventListener('click', onImageClick);
 
 function renderGallery(images) {
   return images
@@ -24,7 +22,3 @@ let lightBox = new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionDelay: 250,
 });
-
-// function onImageClick(e) {
-//   e.preventDefault();
-// }
