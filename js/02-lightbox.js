@@ -21,4 +21,5 @@ let lightBox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
+  scrollZoom: false,
 });
